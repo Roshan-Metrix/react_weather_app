@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.temp{
+    @apply my-1 mx-1 w-[50%] py-4 bg-neutral-800 text-white text-[17px] rounded-lg font-medium;
+}
