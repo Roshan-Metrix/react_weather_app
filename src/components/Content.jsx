@@ -59,7 +59,7 @@ export const Content = () => {
       <div className="absolute inset-0 z-10 bg-black opacity-60"></div>
 
       {/* Content Box */}
-      <div className="z-20 w-[45%] h-auto">
+      <div className="z-20 w-[60%] h-auto">
         {/* City, Temperature & Condition */}
         <div className="text-white my-4 w-[100%] h-50 rounded-lg px-15 py-8 flex justify-between items-center shadow-md shadow-neutral-100">
           <div className="flex flex-col p-4 gap-6">
@@ -80,7 +80,7 @@ export const Content = () => {
         {/* Weather Details & Search Bar */}
         <div className="flex justify-center items-center gap-4 w-[100%] h-50">
           {/* Weather Data Boxes */}
-          <div className="w-[50%] h-[100%] gap-2 p-2 shadow-md shadow-neutral-50 rounded-lg flex flex-wrap justify-center">
+          <div className="w-[50%] h-[110%] gap-2 p-4 shadow-md shadow-neutral-50 rounded-lg flex flex-wrap justify-center">
             <Box Name="Temperature" Value={`${weather ? weather.current.temp_c + " °C" : "--"}`} />
             <Box Name="Humidity" Value={`${weather ? weather.current.humidity + "%" : "--"}`} />
             <Box Name="Wind Speed" Value={`${weather ? weather.current.wind_kph + " kph" : "--"}`} />
@@ -90,10 +90,11 @@ export const Content = () => {
           </div>
 
           {/* Location Details & Search */}
-          <div className="rounded-lg w-[50%] h-[100%] shadow-md shadow-neutral-50 text-white">
-            <div className="flex mt-2 mx-1 p-4 gap-8 text-white bg-neutral-800 text-[20px] rounded-lg text-center font-medium">
-              <p>Latitude : {weather ? weather.location.lat : "--"}</p>
-              <p>Longitude : {weather ? weather.location.lon : "--"}</p>
+          <div className="p-4 rounded-lg w-[50%] h-[110%] shadow-md shadow-neutral-50 text-white">
+            <div className="flex mt-2 mx-1 p-4 justify-evenly text-white bg-neutral-800 text-[20px] rounded-lg text-center font-medium">
+              <p>Latitude  {weather ? weather.location.lat : "--"}</p>
+              <p>||</p>
+              <p>Longitude  {weather ? weather.location.lon : "--"}</p>
             </div>
              <div className="flex text-center">
               <p className="temp">{weather ? weather.current.temp_c : "--"} °C</p>
