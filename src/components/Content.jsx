@@ -7,7 +7,7 @@ import snow from "../assets/bgImages/snow.jpg";
 import thunder from "../assets/bgImages/thunder.jpg";
 import overcast from "../assets/bgImages/overcast.jpg";
 import mist from "../assets/bgImages/mist.jpg";
-import Box from "./Box";
+import Box from "./box";
 
 export const Content = () => {
   const [weather, setWeather] = useState(null);
